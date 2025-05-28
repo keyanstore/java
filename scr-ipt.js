@@ -1,4 +1,4 @@
-    const PASSWORD_HASH = "Omg@tX0wp@no";
+    const ENC = "Omg@tX0wp@no";
     const MAX_ATTEMPTS = 3;
     const LOCKOUT_TIME = 5 * 60 * 1000;
     const SESSION_DURATION = 5 * 60 * 1000;
@@ -102,7 +102,7 @@
 
       const hashedPassword = await sha256(enteredPassword);
       
-      if (hashedPassword === PASSWORD_HASH) {
+      if (hashedPassword === ENC) {
 
         loader.style.display = 'flex';
         
